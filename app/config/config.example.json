@@ -1,0 +1,33 @@
+{
+    "server": {
+        "index": {
+            "port": 8085
+        }
+    },
+    "logging": {
+        "label"         : "UserAuthentication",
+        "consoleLevel"  : "debug",
+        "fileLevel"     : "debug",
+        "enviroment"    : "development"
+    },
+    "database": {
+        "mysqlMaster"    : {
+            "host"           : "localhost",
+            "port"           : "8889",
+            "user"           : "root",
+            "password"       : "root",
+            "database"       : "userAuthentication",
+            "acquireTimeout" : 10,
+            "connectionLimit": 10
+        },
+        "mysqlReadSlave" : {
+            "host"           : "localhost",
+            "port"           : "8889",
+            "user"           : "root",
+            "password"       : "root",
+            "database"       : "userAuthentication",
+            "acquireTimeout" : 10,
+            "connectionLimit": 10
+        }
+    }   
+}
